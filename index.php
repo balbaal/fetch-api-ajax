@@ -57,7 +57,7 @@
             $("#user-count").text(data.length);
 
             data.forEach(dat => {
-              let userList = '<tr><td width="10"><img class="pull-left img-circle nav-user-photo" width="50" src="'+dat.picture.large+'" /></td><td>'+dat.name.title +' '+dat.name.first+ '<br><i class="fa fa-envelope"></i></td><td>'+dat.gender+'</td><td align="center">Email:  '+dat.email+'<br><small class="text-muted">registered : '+dat.registered.date+'</small></td></tr>';
+              let userList = '<tr><td width="10"><img class="pull-left img-circle nav-user-photo" width="50" src="'+dat.picture.large+'" /></td><td>'+dat.name.title +' '+dat.name.first+ '<br><i class="fa fa-envelope"></i></td><td>'+dat.gender+'</td><td align="left">email:  '+dat.email+'<br><small class="text-muted">registered : '+dat.registered.date+'</small></td></tr>';
 
               $("#user-list").append(userList);
             });
